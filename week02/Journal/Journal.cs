@@ -91,7 +91,7 @@ public class Journal
 
         if (!found)
         {
-            Console.WriteLine("No matching entries found.\n");
+            Console.WriteLine("No matching entries found\n");
         }
     }
 }

@@ -13,7 +13,7 @@ public class PromptGenerator
         "If I had one thing I could do over today, what would it be?",
         "What made me smile today?",
         "What challenge did I overcome today?",
-        "What is something new I learned today?",
+        "What is something new I learn today?",
         "What goal did I work on today?"
     };
 
