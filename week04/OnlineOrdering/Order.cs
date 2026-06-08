@@ -25,6 +25,7 @@ public class Order
             total += product.GetTotalCost();
         }
 
+<<<<<<< HEAD
         if (_customer.LivesInUSA())
         {
             total += 5;
@@ -33,6 +34,9 @@ public class Order
         {
             total += 35;
         }
+=======
+        total += _customer.LivesInUSA() ? 5 : 35;
+>>>>>>> c840579d2db24b63061d3bf3f6bbad7c90f4f6d1
 
         return total;
     }
@@ -44,7 +48,11 @@ public class Order
         foreach (Product product in _products)
         {
             label.AppendLine(
+<<<<<<< HEAD
                 $"Product: {product.GetName()}, ID: {product.GetProductId()}");
+=======
+                $"Product: {product.GetName()} | ID: {product.GetProductId()}");
+>>>>>>> c840579d2db24b63061d3bf3f6bbad7c90f4f6d1
         }
 
         return label.ToString();
@@ -52,6 +60,11 @@ public class Order
 
     public string GetShippingLabel()
     {
+<<<<<<< HEAD
         return $"{_customer.GetName()}\n{_customer.GetAddress().GetFullAddress()}";
+=======
+        return $"{_customer.GetName()}\n" +
+               $"{_customer.GetAddress().GetFullAddress()}";
+>>>>>>> c840579d2db24b63061d3bf3f6bbad7c90f4f6d1
     }
 }

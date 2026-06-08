@@ -13,6 +13,14 @@ public class Product
         _quantity = quantity;
     }
 
+<<<<<<< HEAD
+=======
+    public double GetTotalCost()
+    {
+        return _price * _quantity;
+    }
+
+>>>>>>> c840579d2db24b63061d3bf3f6bbad7c90f4f6d1
     public string GetName()
     {
         return _name;
@@ -21,6 +29,7 @@ public class Product
     public string GetProductId()
     {
         return _productId;
+<<<<<<< HEAD
     }
 
     public double GetTotalCost()
@@ -28,3 +37,6 @@ public class Product
         return _price * _quantity;
     }
 }
+=======
+    }}
+>>>>>>> c840579d2db24b63061d3bf3f6bbad7c90f4f6d1
