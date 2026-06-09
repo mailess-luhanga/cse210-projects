@@ -1,4 +1,4 @@
-public class Comment
+public class Comment  //comment
 {
     private string _name;
     private string _text;
